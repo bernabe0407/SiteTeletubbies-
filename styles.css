@@ -1,0 +1,156 @@
+/* Importação da fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Fundo gradiente com as cores dos Teletubbies */
+    background: linear-gradient(135deg, #a750a9, #569b3e, #f1e03a, #e74744);
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.teletubbies-container {
+    margin-bottom: 40px;
+}
+
+.teletubbies-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.description-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 0 auto 40px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+    line-height: 1.6;
+}
+
+.description-box h2 {
+    margin-top: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.characters-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.character-box {
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer; /* Adiciona o cursor de clique */
+}
+
+.character-box:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Estilo para a imagem dentro do quadro */
+.character-image {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do quadro */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.character-box h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.character-box p {
+    font-size: 1em;
+}
+
+/* Cores específicas para cada Teletubby */
+.tinky-winky {
+    background-color: #a750a9;
+}
+
+.dipsy {
+    background-color: #569b3e;
+}
+
+.laa-laa {
+    background-color: #f1e03a;
+}
+
+.po {
+    background-color: #e74744;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Estilos para o Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+

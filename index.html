@@ -1,0 +1,67 @@
+<<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teletubbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao site dos Teletubbies!</h1>
+    </header>
+
+    <main>
+        <div class="teletubbies-container">
+            <img src="https://tm.ibxk.com.br//2015/06/03/03173013703307.jpg?ims=1200x675" alt="Teletubbies" class="teletubbies-image">
+        </div>
+        
+        <div class="description-box">
+            <h2>O que são os Teletubbies?</h2>
+            <p>
+                Teletubbies é uma série de televisão infantil britânica, criada por Anne Wood e Andrew Davenport para a BBC. O programa foca em quatro personagens coloridos chamados Tinky Winky, Dipsy, Laa-Laa e Po, que vivem em um mundo de fantasia chamado Teletubbilândia. A série foi projetada para bebês e crianças em idade pré-escolar, com o objetivo de ajudar no desenvolvimento da fala, audição e habilidades cognitivas por meio de repetições e interações simples.
+            </p>
+            <p>
+                Reconhecidos por suas antenas únicas e telas de TV na barriga, os Teletubbies se comunicam principalmente através de sons e balbucios, lembrando a linguagem de bebês. O sucesso da série foi global, e no Brasil, o programa estreou na **Rede Globo** em **1999**, rapidamente se tornando um fenômeno entre as crianças e parte da cultura popular brasileira.
+            </p>
+        </div>
+        
+        <div class="characters-container">
+            <div class="character-box tinky-winky" onclick="showImage('tinky_winky.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2HE-AVRMY7idk7a8NBgWL70lyDMZYbCQqDw&s" alt="Tinky Winky" class="character-image">
+                <h2>Tinky Winky</h2>
+                <p>O Teletubby roxo.</p>
+            </div>
+            <div class="character-box dipsy" onclick="showImage('dipsy.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1exPG5KG1FZmIieHpDd-NyAM1aDSpt0POA&s" alt="Dipsy" class="character-image">
+                <h2>Dipsy</h2>
+                <p>O Teletubby verde.</p>
+            </div>
+            <div class="character-box laa-laa" onclick="showImage('laa_laa.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_9f6pdBq6gTQT43UOiCPsDDlN_EAYWC3wHcYfV0cSYyf3XNLzuFxjqn3hUNbMiIoPvw&usqp=CAU" alt="Laa-Laa" class="character-image">
+                <h2>Laa-Laa</h2>
+                <p>A Teletubby amarela.</p>
+            </div>
+            <div class="character-box po" onclick="showImage('po.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_wgM5UaTntLgYIOuOnUYLkQ8Ek4Zi32Apghf1__0RIu8T-9sJtqx5mcUThPwP0y_mjng&usqp=CAU" alt="Po" class="character-image">
+                <h2>Po</h2>
+                <p>A Teletubby vermelha.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aqui a mágia dos Teletubbies acontece.</p>
+    </footer>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
