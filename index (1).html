@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teletubbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="accessibility-buttons">
+            <button id="aumentarFonte" class="btn btn-primary">A+</button>
+            <button id="diminuirFonte" class="btn btn-primary">A-</button>
+            <button id="altoContraste" class="btn btn-primary">Alto Contraste</button>
+        </div>
+        <h1>Bem-vindo ao site dos Teletubbies!</h1>
+    </header>
+
+    <main>
+        <div class="teletubbies-container">
+            <img src="https://tm.ibxk.com.br//2015/06/03/03173013703307.jpg?ims=1200x675" alt="Teletubbies" class="teletubbies-image">
+        </div>
+        
+        <div class="description-box">
+            <h2>O que são os Teletubbies?</h2>
+            <p>
+                Teletubbies é uma série de televisão infantil britânica, criada por Anne Wood e Andrew Davenport para a BBC. O programa foca em quatro personagens coloridos chamados Tinky Winky, Dipsy, Laa-Laa e Po, que vivem em um mundo de fantasia chamado Teletubbilândia. A série foi projetada para bebês e crianças em idade pré-escolar, com o objetivo de ajudar no desenvolvimento da fala, audição e habilidades cognitivas por meio de repetições e interações simples.
+            </p>
+            <p>
+                Reconhecidos por suas antenas únicas e telas de TV na barriga, os Teletubbies se comunicam principalmente através de sons e balbucios, lembrando a linguagem de bebês. O sucesso da série foi global, e no Brasil, o programa estreou na Rede Globo em 1999, rapidamente se tornando um fenômeno entre as crianças e parte da cultura popular brasileira.
+            </p>
+        </div>
+        
+        <div class="characters-container">
+            <div class="character-box tinky-winky" onclick="showImage('tinky_winky.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2HE-AVRMY7idk7a8NBgWL70lyDMZYbCQqDw&s" alt="Tinky Winky" class="character-image">
+                <h2>Tinky Winky</h2>
+                <p>O Teletubby roxo.</p>
+            </div>
+            <div class="character-box dipsy" onclick="showImage('dipsy.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1exPG5KG1FZmIieHpDd-NyAM1aDSpt0POA&s" alt="Dipsy" class="character-image">
+                <h2>Dipsy</h2>
+                <p>O Teletubby verde.</p>
+            </div>
+            <div class="character-box laa-laa" onclick="showImage('laa_laa.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP_9f6pdBq6gTQT43UOiCPsDDlN_EAYWC3wHcYfV0cSYyf3XNLzuFxjqn3hUNbMiIoPvw&usqp=CAU" alt="Laa-Laa" class="character-image">
+                <h2>Laa-Laa</h2>
+                <p>A Teletubby amarela.</p>
+            </div>
+            <div class="character-box po" onclick="showImage('po.png')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_wgM5UaTntLgYIOuOnUYLkQ8Ek4Zi32Apghf1__0RIu8T-9sJtqx5mcUThPwP0y_mjng&usqp=CAU" alt="Po" class="character-image">
+                <h2>Po</h2>
+                <p>A Teletubby vermelha.</p>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <h2>Abertura dos Teletubbies em Português</h2>
+            <iframe src="https://www.youtube.com/embed/5Fp3U_R76l0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <h2>Primeiro Episódio: Um Dia na Terra dos Teletubbies</h2>
+            <iframe src="https://www.youtube.com/embed/n3W-8oW9z8M" title="Teletubbies em Português Brasil: Temporada 1, Episódio 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="characteristics-container">
+            <h2>Conheça Nossos Amigos!</h2>
+            <div class="characteristic-box tinky-winky">
+                <h3>Tinky Winky</h3>
+                <p>O maior e mais velho dos Teletubbies. Ele é gentil e adora dançar. Sua cor favorita é o roxo, e ele carrega uma bolsa mágica vermelha, que sempre esconde algo divertido.</p>
+            </div>
+            <div class="characteristic-box dipsy">
+                <h3>Dipsy</h3>
+                <p>O Teletubby verde, conhecido por sua personalidade teimosa e sua dança engraçada. Ele usa um chapéu listrado que adora, e sua cor favorita é o verde-limão.</p>
+            </div>
+            <div class="characteristic-box laa-laa">
+                <h3>Laa-Laa</h3>
+                <p>A Teletubby amarela, feliz e que adora cantar. Ela é a mais amorosa do grupo e tem uma bola laranja que é sua companheira inseparável. A Laa-Laa adora pular e dançar em círculos.</p>
+            </div>
+            <div class="characteristic-box po">
+                <h3>Po</h3>
+                <p>A menor e mais jovem dos Teletubbies. A Po é vermelha, fala com um sotaque cantonês e adora andar de scooter. Ela é doce, brincalhona e a melhor amiga do Tinky Winky.</p>
+            </div>
+        </div>
+
+        <div class="streaming-container">
+            <h2>Aonde assistir os Teletubbies</h2>
+            <p>
+                O programa Teletubbies está disponível para ser assistido online em algumas plataformas de streaming. Você pode encontrar as temporadas mais recentes e a nova série animada nos seguintes serviços:
+            </p>
+            <ul>
+                <li>Netflix: A nova série dos Teletubbies, de 2022, está disponível para os assinantes.</li>
+                <li>YouTube: O canal oficial dos Teletubbies tem uma vasta coleção de episódios, músicas e clipes em português.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Aqui a mágia dos Teletubbies acontece.</p>
+    </footer>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close">×</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
