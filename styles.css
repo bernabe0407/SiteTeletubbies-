@@ -1,132 +1,238 @@
-/* Importação da fonte Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Variáveis de Cores inspiradas nos Teletubbies */
+:root {
+    --tinky-winky-roxo: #9daaf3; /* Slate Blue */
+    --dipsy-verde: #3dd33d;      /* Green */
+    --laa-laa-amarelo: #ece927;  /* Gold */
+    --po-vermelho: #DC143C;      /* Crimson */
+    --cor-fundo-principal: #9dedf3; /* Caqui claro para o fundo */
+    --cor-fonte-escura: #020000; /* Cinza escuro */
+    --cor-fonte-clara: #000000;  /* Branco */
+}
 
-/* Estilos globais */
+/* Estilos gerais do corpo e dos elementos */
 body {
+    background-color: var(--cor-fundo-principal);
     font-family: 'Roboto', sans-serif;
+    color: var(--cor-fonte-escura);
     margin: 0;
     padding: 0;
-    /* Fundo gradiente com as cores dos Teletubbies */
-    background: linear-gradient(135deg, #a750a9, #569b3e, #f1e03a, #e74744);
-    color: #ffffff;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-header {
-    padding: 40px 20px;
-}
-
-header h1 {
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-main {
-    flex: 1;
-    padding: 20px;
-}
-
-.teletubbies-container {
-    margin-bottom: 40px;
-}
-
-.teletubbies-image {
-    max-width: 80%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-.description-box {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    margin: 0 auto 40px;
-    max-width: 800px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    text-align: left;
+    box-sizing: border-box;
     line-height: 1.6;
 }
 
-.description-box h2 {
-    margin-top: 0;
-    font-size: 2em;
+/* Alterado: Cor do cabeçalho para roxo do Tinky Winky */
+header {
+    background-color: var(--tinky-winky-roxo);
+    color: var(--cor-fonte-clara);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Alterado: Cor dos títulos para preto */
+h2 {
+    color: var(--cor-fonte-escura);
+    border-bottom: 2px solid var(--cor-fonte-escura);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.teletubbies-container, .video-container, .description-box {
+    margin-bottom: 30px;
     text-align: center;
 }
 
-.characters-container {
+.teletubbies-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.characters-container, .characteristics-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.character-box {
-    width: 200px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-    cursor: pointer; /* Adiciona o cursor de clique */
+/* Adicionado: Espaço para separar do container abaixo */
+.characteristics-container {
+    margin-bottom: 40px; 
 }
 
-.character-box:hover {
-    transform: translateY(-10px) scale(1.05);
-}
-
-/* Estilo para a imagem dentro do quadro */
-.character-image {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do quadro */
+.character-box, .characteristic-box {
+    flex: 1 1 200px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-.character-box h2 {
-    margin-top: 0;
-    font-size: 1.5em;
+.character-box:hover, .characteristic-box:hover {
+    transform: translateY(-5px);
 }
 
-.character-box p {
-    font-size: 1em;
+.character-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #fff;
 }
 
-/* Cores específicas para cada Teletubby */
+/* Cores específicas para cada personagem */
 .tinky-winky {
-    background-color: #a750a9;
+    background-color: var(--tinky-winky-roxo);
+    color: var(--cor-fonte-escura); 
+}
+
+.tinky-winky h2, .tinky-winky p, .tinky-winky h3 {
+    color: var(--cor-fonte-escura);
 }
 
 .dipsy {
-    background-color: #569b3e;
+    background-color: var(--dipsy-verde);
+    color: var(--cor-fonte-escura); 
+}
+
+.dipsy h2, .dipsy p, .dipsy h3 {
+    color: var(--cor-fonte-escura); 
 }
 
 .laa-laa {
-    background-color: #f1e03a;
+    background-color: var(--laa-laa-amarelo);
+    color: var(--cor-fonte-escura);
 }
 
 .po {
-    background-color: #e74744;
+    background-color: var(--po-vermelho);
+    color: var(--cor-fonte-escura); 
 }
 
-footer {
+.po h2, .po p, .po h3 {
+    color: var(--cor-fonte-escura); 
+}
+
+.laa-laa h2, .laa-laa p, .laa-laa h3 {
+    color: var(--cor-fonte-escura);
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Novo estilo para a moldura em volta do texto "Aonde assistir" */
+.streaming-container {
+    border: 2px solid var(--dipsy-verde);
     padding: 20px;
-    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #f9f9f9;
 }
 
-/* Estilos para o Modal */
+/* Estilos de acessibilidade */
+.accessibility-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 20px;
+}
+
+.accessibility-buttons button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accessibility-buttons button:hover {
+    background-color: #e90c0c;
+}
+
+.accessibility-buttons button:focus {
+    outline: 2px solid #000;
+}
+
+/* Estilos de alto contraste */
+body.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+body.high-contrast h1, 
+body.high-contrast h2, 
+body.high-contrast h3 {
+    color: yellow;
+}
+
+body.high-contrast .description-box, 
+body.high-contrast .character-box,
+body.high-contrast .characteristic-box,
+body.high-contrast .streaming-container {
+    background-color: #111;
+    border-color: #fff;
+}
+
+body.high-contrast .character-box,
+body.high-contrast .characteristic-box {
+    color: #fff;
+}
+
+body.high-contrast .laa-laa {
+    background-color: yellow;
+    color: #000; /* Texto preto para o amarelo do contraste */
+}
+
+body.high-contrast .laa-laa h2, body.high-contrast .laa-laa p, body.high-contrast .laa-laa h3 {
+    color: #000;
+}
+
+body.high-contrast .accessibility-buttons button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid yellow;
+}
+
+/* Estilos do modal */
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 60px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.9);
 }
 
@@ -147,10 +253,8 @@ footer {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }
-
